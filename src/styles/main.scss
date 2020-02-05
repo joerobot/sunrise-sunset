@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global */
+* {
+  @apply relative;
+
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-warm text-navy font-serif;
+
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-display uppercase;
+}
+
+.wrapper {
+  @apply max-w-3xl mx-auto px-4;
+}
+
+/* Sunrise / Sunset Times */
+.sun-data-container {
+  > * + * {
+    @apply border-t-4 mt-4 pt-4 border-navy;
+
+    @screen md {
+      @apply pl-4 ml-4 border-l-4 mt-0 pt-0 border-t-0;
+    }
+  }
+}
+
+
+/* Loading spinner */
+.loader {
+  @apply inline-block border-navy border-8 border-solid overflow-hidden;
+
+  animation: loader 1250ms infinite linear;
+  border-right-color: transparent;
+  border-radius: 16px;
+  text-indent: -9999px;
+  width: 32px;
+  height: 32px;
+}
+
+@keyframes loader {
+  to {
+    transform: rotate(360deg);
+  }
+}
