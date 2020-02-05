@@ -1,5 +1,5 @@
 {
-  "name": "weather-app",
+  "name": "sunrise-sunset",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.html",
@@ -13,7 +13,7 @@
   "author": "Joe Reed",
   "repository": {
     "type": "git",
-    "url": "https://github.com/joerobot/movie-listings.git"
+    "url": "https://github.com/joerobot/sunrise-sunset.git"
   },
   "license": "ISC",
   "engines": {
